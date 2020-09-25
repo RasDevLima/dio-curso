@@ -1,0 +1,183 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: var(--preto);
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.icon-menu {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.icon-menu i{
+  font-size: 30px;
+  color: #cacaca;
+}
+
+.icon-menu i:hover{
+  color: #fff;
+}
+
+.logo img {
+  height: 30px;
+}
+
+nav {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+nav a {
+  padding: 0 10px;
+  color: #cacaca;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.icones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icones a {
+  margin: 0 15px;
+  color: #cacaca;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.icones a {
+  margin: 0 15px;
+}
+
+.icones a i {
+  font-size: 20px;
+}
+
+.icones a:hover {
+  color: #fff;
+}
+
+.badge1 {
+  position: relative;
+}
+
+.badge1[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  font-size:.8em;
+  background: var(--vermelho);
+  color:white;
+  width:18px;
+  height:18px;
+  text-align:center;
+  line-height:16px;
+  border-radius:50%;
+  box-shadow:0 0 1px #333;
+}
+
+.icones img {
+  height: 35px;
+  border-radius: 2px;
+}
+
+.filme-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)100%), url("../img/eub9xDaIfNwvg0oEv5tvkAlFqrO.jpg");
+  height: 80vh;
+  background-size: cover;
+  padding: 0 50px;
+}
+
+.filme-principal .container {
+  max-width: 60%;
+}
+
+.titulo {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  border-radius: 2px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.btn:hover {
+  background: #fff;
+  color: var(--preto);
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+.btn:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}

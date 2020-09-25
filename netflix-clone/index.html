@@ -5,20 +5,83 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+<!-- Owl css -->
+  <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
   <title>Netflix Clone</title>
 </head>
 <body>
+
   <header>
     <div class="container">
-      <h2 class="logo">NETFLIX</h2>
+      <div class="logo">
+<!--        <span class="icon-menu"><i class="fas fa-bars"></i></span>-->
+        <img src="./img/netflix-logo.png" alt="">
+      </div>
       <nav>
-        <a href="">Início</a>
-        <a href="">Séries</a>
-        <a href="">Filmes</a>
-        <a href=""></a>
-        <a href="">Minha Lista</a>
+        <a href="#">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Lançamentos</a>
+        <a href="#">Minha Lista</a>
       </nav>
+      <div class="icones">
+        <a href="#"><i><i class="fas fa-search"></i></i></a>
+        <a href="#">INFANTIL</a>
+        <a href="#">BLUERAY</a>
+        <a href="#"><i class="fas fa-gift"></i></a>
+        <a href="#" class="badge1" data-badge="9+"><i class="fas fa-bell"></i></a>
+        <a href="#"><img src="./img/profile.jpg" alt="profile photo"></a>
+      </div>
     </div>
   </header>
+
+  <main>
+    <div class="filme-principal">
+      <div class="container">
+        <h3 class="titulo">THE BOYS</h3>
+        <p class="descricao">Na trama, conhecemos um mundo em que super-heróis são as maiores celebridades do planeta, e rotineiramente abusam dos seus poderes ao invés de os usarem para o bem.</p>
+      </div>
+     <div class="buttons">
+       <button class="btn" role="button"><i class="fas fa-play"></i>Assistir Agora</button>
+       <button class="btn" role="button"><i class="far fa-question-circle"></i>Mais informações</button>
+     </div>
+    </div>
+  </main>
+  <div class="carrosel-filmes">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="img/coringa.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/doisirmaos.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/flash.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/got.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/lacasa.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/jumanji.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/power.jpg" alt="">
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/ratched.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/owl/jquery.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
